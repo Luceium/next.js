@@ -174,7 +174,7 @@ impl ValueToString for IncludedModuleReference {
 impl ModuleReference for IncludedModuleReference {
     #[turbo_tasks::function]
     async fn resolve_reference(&self) -> Result<Vc<ModuleResolveResult>> {
-        Ok(ModuleResolveResult::module(RequestKey::default(), self.module).cell())
+        Ok(ModuleResolveResult::module(self.module).cell())
     }
 }
 

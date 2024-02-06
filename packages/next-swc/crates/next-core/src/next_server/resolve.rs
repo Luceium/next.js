@@ -192,10 +192,9 @@ impl ResolvePlugin for ExternalCjsModulesResolvePlugin {
                 if let Some(request) = request.await?.request() {
                     // mark as external
                     Ok(ResolveResultOption::some(
-                        ResolveResult::primary(
-                            RequestKey::default(),
-                            ResolveResultItem::OriginalReferenceTypeExternal(request),
-                        )
+                        ResolveResult::primary(ResolveResultItem::OriginalReferenceTypeExternal(
+                            request,
+                        ))
                         .cell(),
                     ))
                 } else {

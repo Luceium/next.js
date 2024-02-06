@@ -156,10 +156,7 @@ impl ImportMappingReplacement for NextFontGoogleReplacer {
             .into()),
         );
 
-        Ok(ImportMapResult::Result(
-            ResolveResult::source(RequestKey::default(), Vc::upcast(js_asset)).into(),
-        )
-        .into())
+        Ok(ImportMapResult::Result(ResolveResult::source(Vc::upcast(js_asset)).into()).into())
     }
 }
 
@@ -271,10 +268,7 @@ impl ImportMappingReplacement for NextFontGoogleCssModuleReplacer {
             ),
         );
 
-        Ok(ImportMapResult::Result(
-            ResolveResult::source(RequestKey::default(), Vc::upcast(css_asset)).into(),
-        )
-        .into())
+        Ok(ImportMapResult::Result(ResolveResult::source(Vc::upcast(css_asset)).into()).into())
     }
 }
 
@@ -356,10 +350,7 @@ impl ImportMappingReplacement for NextFontGoogleFontFileReplacer {
             AssetContent::file(FileContent::Content(font.await?.0.as_slice().into()).into()),
         );
 
-        Ok(ImportMapResult::Result(
-            ResolveResult::source(RequestKey::default(), Vc::upcast(font_source)).into(),
-        )
-        .into())
+        Ok(ImportMapResult::Result(ResolveResult::source(Vc::upcast(font_source)).into()).into())
     }
 }
 
