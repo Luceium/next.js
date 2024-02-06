@@ -1,10 +1,8 @@
 use anyhow::Result;
 use turbo_tasks::{ValueToString, Vc};
 use turbopack_binding::turbopack::core::{
-    chunk::ChunkableModuleReference,
-    module::Module,
-    reference::ModuleReference,
-    resolve::{ModuleResolveResult, RequestKey},
+    chunk::ChunkableModuleReference, module::Module, reference::ModuleReference,
+    resolve::ModuleResolveResult,
 };
 
 #[turbo_tasks::value]

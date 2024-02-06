@@ -7,7 +7,7 @@ use turbopack_binding::turbopack::{
         ident::AssetIdent,
         module::Module,
         reference::{ModuleReference, ModuleReferences},
-        resolve::{ModuleResolveResult, RequestKey},
+        resolve::ModuleResolveResult,
     },
     ecmascript::chunk::{
         EcmascriptChunkItem, EcmascriptChunkItemContent, EcmascriptChunkPlaceable,

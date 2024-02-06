@@ -27,7 +27,7 @@ use turbopack_binding::{
             resolve::{
                 options::{ImportMapResult, ImportMapping, ImportMappingReplacement},
                 parse::Request,
-                RequestKey, ResolveResult,
+                ResolveResult,
             },
             virtual_source::VirtualSource,
         },

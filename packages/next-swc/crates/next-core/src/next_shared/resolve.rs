@@ -18,7 +18,7 @@ use turbopack_binding::{
             parse::Request,
             pattern::Pattern,
             plugin::{ResolvePlugin, ResolvePluginCondition},
-            RequestKey, ResolveResult, ResolveResultItem, ResolveResultOption,
+            ResolveResult, ResolveResultItem, ResolveResultOption,
         },
     },
 };
